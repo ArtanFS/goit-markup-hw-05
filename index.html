@@ -586,6 +586,36 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="form" name="issue_report_form" autocomplete="off">
+          <p>Leave your contacts and we will call you back</p>
+          <label class="form-label">
+            Name
+            <input class="form-input" type="text" name="username" autofocus />
+          </label>
+
+          <label class="form-label">
+            Phone
+            <input class="form-input" type="tel" name="phone-number" />
+          </label>
+
+          <label class="form-label">
+            Email
+            <input class="form-input" type="mail" name="email" />
+          </label>
+
+          <label class="form-label">
+            Comment
+            <textarea
+              class="form-input"
+              name="commentary"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <button class="form-button" type="submit">Submit an issue</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
