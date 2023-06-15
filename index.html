@@ -580,23 +580,30 @@
         </div>
 
         <div class="footer-subscribe-container">
+          <p class="footer-subscribe-text">Subscribe</p>
           <form
-            class="footer-form"
+            class="footer-subscribe-form"
             name="subscribe_form"
             autocomplete="off"
-            novalidate
           >
-            <label class="footer-form-label">
+            <input
+              class="footer-input"
+              type="text"
+              name="subscribe"
+              placeholder="Email"
+            />
+            <button class="footer-btn" type="submit">
               Subscribe
-              <input class="footer-form-field" type="text" name="subscribe" />
-            </label>
-            <button class="footer-btn" type="submit">Subscribe</button>
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <!--is-hidden-->
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
@@ -669,12 +676,12 @@
 
             <div class="modal-field-check">
               <input
-                class="modal-check visually-hidden"              
+                class="modal-check visually-hidden"
                 type="checkbox"
                 name="policy"
                 id="policy"
                 value="accept"
-              ></input>
+              />
               <label class="check-text" for="policy">
                 <span>
                   <svg class="check-icon" width="8" height="10">
