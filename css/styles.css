@@ -810,8 +810,6 @@ img {
 }
 
 .check-text {
-  display: flex;
-  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -819,13 +817,12 @@ img {
 }
 
 .check-link {
-  margin-left: 0.35em;
   color: var(--color-primary-brand);
   text-decoration: underline;
 }
 
 .modal-check-visible {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 16px;
