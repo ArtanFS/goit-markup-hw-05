@@ -506,9 +506,9 @@ img {
   border: 1px solid var(--color-whitebg);
   border-radius: 4px;
   background-color: transparent;
-  outline: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-whitebg);
   padding: 0px 16px;
@@ -521,8 +521,9 @@ img {
 .footer-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  gap: 16px;
+  min-width: 165px;
   padding: 8px 24px;
   background-color: var(--color-primary-brand);
   border-radius: 4px;
@@ -537,6 +538,7 @@ img {
 
 .footer-btn-icon {
   fill: var(--color-whitebg);
+  margin-left: 16px;
 }
 
 .footer-btn:hover,
