@@ -485,9 +485,6 @@ img {
   background-color: var(--color-success);
 }
 
-.footer-subscribe-container {
-}
-
 .footer-subscribe-text {
   font-weight: 500;
   line-height: 1.5;
@@ -535,15 +532,16 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-whitebg);
-  /* position: relative; */
+  transition: background-color var(--transition);
 }
 
 .footer-btn-icon {
-  /* position: absolute;
-  right: 141px;
-  top: 50%;
-  transform: translatey(-50%); */
   fill: var(--color-whitebg);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: var(--color-pressed);
 }
 
 /**------------Page2-Portfolio--------------*/
