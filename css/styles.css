@@ -819,6 +819,12 @@ img {
 .check-link {
   color: var(--color-primary-brand);
   text-decoration: underline;
+  transition: color var(--transition);
+}
+
+.check-link:hover,
+.check-link:focus {
+  color: var(--color-pressed);
 }
 
 .modal-check-visible {
@@ -835,10 +841,14 @@ img {
     fill var(--transition);
 }
 
-.modal-check:checked + .check-text span {
+.modal-check:checked + .check-text .modal-check-visible {
   background-color: var(--color-pressed);
   border: none;
   fill: var(--color-light);
+}
+
+.modal-check:focus + .check-text .modal-check-visible {
+  border-color: var(--color-pressed);
 }
 
 .form-button {
